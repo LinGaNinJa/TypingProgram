@@ -18,23 +18,35 @@ namespace TypingProgramV0_2
             stopWatch.Start();
 
             // 讀取
-            string typingContent = Console.ReadLine();
+            char[] charList = new char[paragraphLength];
 
-            // 建立一個字串來紀錄使用者實際輸入的字，方便計算wpm
-            string typingLength = typingContent;
+            int i = 0;
+            while (i < paragraphLength)
+            {
+                char c;
+                ConsoleKeyInfo key = Console.ReadKey();
+                c = key.KeyChar;
+
+                if (key.Key == ConsoleKey.Backspace) i--;
+                if (key.Key == ConsoleKey.Enter) c = '\n';
+
+                charList[i] = c;
+
+                i++;
+            }
 
             // 停止計時
             stopWatch.Stop();
 
-            //補滿字數不足的區域
-            for (int i = typingContent.Length; i < paragraphLength; i++)
+            string typingContent = "";
+            for (int j = 0; j < charList.Length; j++)
             {
-                typingContent += '\u2328';
+                typingContent += charList[j];
             }
 
             paragraph.TimeSpan = stopWatch.Elapsed; // 總時長
             paragraph.Content = typingContent;
-            paragraph.Length = typingLength.Length;
+            paragraph.Length = typingContent.Length;
         }
 
         // 取得User Status

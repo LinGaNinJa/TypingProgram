@@ -34,6 +34,7 @@ namespace TypingProgramV0_2
             elapsedTime = String.Format("{0:00}分 {1:00}秒 {2:00}毫秒", uTime.Minutes, uTime.Seconds, uTime.Milliseconds / 10);
 
             // 輸出畫面
+            Console.Clear();
             Console.WriteLine("打字準確率：{0}％", accuracy * 100);
             Console.WriteLine();
             Console.WriteLine("每分鐘單字數：{0}", resultWPM);
