@@ -10,7 +10,7 @@ namespace TypingProgramV0_2
         選擇模式
         ----------------------------------------------
         */
-        public void ChoseExample()
+        override public void ChoseExample()
         {
             ShowExample();
             ReadExample();

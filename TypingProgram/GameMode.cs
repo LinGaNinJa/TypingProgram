@@ -4,11 +4,7 @@ namespace TypingProgramV0_2
     public class GameMode
     {
         protected Paragraph paragraph = new Paragraph();
-        /* 
-        --------------------------------------------------------------------------------------------------------------
-        取得數值
-        ----------------------------------------------
-        */
+
         public string GetContent()
         {
             return paragraph.Content;
@@ -18,5 +14,8 @@ namespace TypingProgramV0_2
         {
             return paragraph.Length;
         }
+
+        virtual public void ChoseExample() { }
+
     }
 }

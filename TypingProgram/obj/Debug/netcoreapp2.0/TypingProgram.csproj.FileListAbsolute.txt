@@ -1,0 +1,11 @@
+/Users/linjialong/Projects/TypingProgram/TypingProgram/bin/Debug/netcoreapp2.0/TypingProgram.deps.json
+/Users/linjialong/Projects/TypingProgram/TypingProgram/bin/Debug/netcoreapp2.0/TypingProgram.runtimeconfig.json
+/Users/linjialong/Projects/TypingProgram/TypingProgram/bin/Debug/netcoreapp2.0/TypingProgram.runtimeconfig.dev.json
+/Users/linjialong/Projects/TypingProgram/TypingProgram/bin/Debug/netcoreapp2.0/TypingProgram.dll
+/Users/linjialong/Projects/TypingProgram/TypingProgram/bin/Debug/netcoreapp2.0/TypingProgram.pdb
+/Users/linjialong/Projects/TypingProgram/TypingProgram/obj/Debug/netcoreapp2.0/TypingProgram.csprojResolveAssemblyReference.cache
+/Users/linjialong/Projects/TypingProgram/TypingProgram/obj/Debug/netcoreapp2.0/TypingProgram.csproj.CoreCompileInputs.cache
+/Users/linjialong/Projects/TypingProgram/TypingProgram/obj/Debug/netcoreapp2.0/TypingProgram.AssemblyInfoInputs.cache
+/Users/linjialong/Projects/TypingProgram/TypingProgram/obj/Debug/netcoreapp2.0/TypingProgram.AssemblyInfo.cs
+/Users/linjialong/Projects/TypingProgram/TypingProgram/obj/Debug/netcoreapp2.0/TypingProgram.dll
+/Users/linjialong/Projects/TypingProgram/TypingProgram/obj/Debug/netcoreapp2.0/TypingProgram.pdb

@@ -6,10 +6,6 @@ namespace TypingProgramV0_2
         private User user = new User();
         private Judgement judgement = new Judgement();
 
-        private ParagraphMode paragraphMode = new ParagraphMode();
-        private VocabularyMode vocabularyMode = new VocabularyMode();
-        private PrefixMode prefixMode = new PrefixMode();
-
         public void Run()
         {
             Console.WriteLine("選擇練習模式：\n1.自選文章練習\n2.七千單字練習\n3.字首字尾字根");
@@ -24,32 +20,32 @@ namespace TypingProgramV0_2
 
                 Console.WriteLine();
                 Console.WriteLine("範圍必須在 1, 2, 3 之間！！");
-                Console.WriteLine("請重新輸入 1, 2, 3 選擇段落 1, 2, 3");
+                Console.WriteLine("請重新輸入 1, 2, 3 選擇模式 1, 2, 3");
             }
 
+            dynamic gameMode = new GameMode();
             switch (inputData)
             {
                 case 1:
-                    paragraphMode.ChoseExample();
-                    judgement.SetCompareContent(paragraphMode.GetContent());
-                    judgement.SetCompareLength(paragraphMode.GetLength());
-                    user.SetParagraphLength(paragraphMode.GetLength());
+                    gameMode = new ParagraphMode();
                     break;
 
                 case 2:
-                    vocabularyMode.ChoseExample();
-                    judgement.SetCompareContent(vocabularyMode.GetContent());
-                    judgement.SetCompareLength(vocabularyMode.GetLength());
-                    user.SetParagraphLength(vocabularyMode.GetLength());
+                    gameMode = new VocabularyMode();
                     break;
 
                 case 3:
-                    prefixMode.ChoseExample();
-                    judgement.SetCompareContent(prefixMode.GetContent());
-                    judgement.SetCompareLength(prefixMode.GetLength());
-                    user.SetParagraphLength(prefixMode.GetLength());
+                    gameMode = new PrefixMode();
                     break;
             }
+
+            gameMode.ChoseExample();
+            string s = gameMode.GetContent();
+            int i = gameMode.GetLength();
+
+            judgement.SetCompareContent(s);
+            judgement.SetCompareLength(i);
+            user.SetParagraphLength(i);
 
             Play();
         }
