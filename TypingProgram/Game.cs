@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace TypingProgramV0_2
 {
     public class Game
@@ -43,8 +44,7 @@ namespace TypingProgramV0_2
             string s = gameMode.GetContent();
             int i = gameMode.GetLength();
 
-            judgement.SetCompareContent(s);
-            judgement.SetCompareLength(i);
+            judgement.SetCompare(s, i);
             user.SetParagraphLength(i);
 
             Play();
@@ -53,12 +53,8 @@ namespace TypingProgramV0_2
         private void Play()
         {
             user.Start();
-            judgement.SetUserContent(user.GetContent());
-            judgement.SetUserLength(user.GetLength());
-            judgement.SetTimeSpan(user.GetTimeSpan()); // 總時長
-
+            judgement.SetUser(user.GetContent(), user.GetLength(), user.GetTimeSpan());
             judgement.Rate();
-            judgement.ShowGrade();
         }
 
     }

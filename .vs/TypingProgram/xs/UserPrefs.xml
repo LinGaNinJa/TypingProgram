@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{1DBA7184-DACB-4217-AAF2-C7D21AC70F38}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TypingProgram/Game.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TypingProgram/Judgement.cs">
     <Files>
       <File FileName="TypingProgram/Program.cs" Line="1" Column="1" />
-      <File FileName="TypingProgram/Game.cs" Line="43" Column="14" />
+      <File FileName="TypingProgram/Game.cs" Line="49" Column="13" />
       <File FileName="TypingProgram/ParagraphMode.cs" Line="22" Column="29" />
       <File FileName="TypingProgram/PrefixMode.cs" Line="13" Column="17" />
       <File FileName="TypingProgram/VocabularyMode.cs" Line="6" Column="17" />
-      <File FileName="TypingProgram/GameMode.cs" Line="18" Column="16" NotebookId="1" />
-      <File FileName="TypingProgram/User.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="TypingProgram/Paragraph.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="TypingProgram/Judgement.cs" Line="1" Column="1" />
+      <File FileName="TypingProgram/GameMode.cs" Line="22" Column="1" NotebookId="1" />
+      <File FileName="TypingProgram/User.cs" Line="28" Column="29" NotebookId="1" />
+      <File FileName="TypingProgram/Paragraph.cs" Line="4" Column="24" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
